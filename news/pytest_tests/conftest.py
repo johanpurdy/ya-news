@@ -51,3 +51,11 @@ def comment(author, news):
 @pytest.fixture
 def pk_for_args(news):
     return (news.pk)
+
+
+@pytest.fixture
+def new_comment_form():
+    return {
+        'text': 'Новый текст комментария',
+
+    }
