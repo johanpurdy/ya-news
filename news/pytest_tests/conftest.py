@@ -46,3 +46,8 @@ def comment(author, news):
         text='Текст Комментария',
     )
     return comment
+
+
+@pytest.fixture
+def pk_for_args(news):
+    return (news.pk)
